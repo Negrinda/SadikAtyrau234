@@ -1,0 +1,154 @@
+/* Базовые сбросы стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+/* Шапка (Хедер) */
+.header {
+    background-color: #e3f2fd;
+    padding: 25px 0;
+    border-bottom: 2px solid #cfd8dc;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-area .quotes {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+}
+
+.site-title {
+    font-size: 30px;
+    color: #1e88e5;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Зеленая панель навигации */
+.navbar {
+    background-color: #7cb342;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 16px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.nav-links li a:hover, .nav-links li a.active {
+    background-color: #689f38;
+}
+
+/* Основные секции */
+.page-section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1700px; /* Слегка расширили для картинки и текста */
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Ортақ контейнер: Сурет пен Мәтінді қатар қою (Flexbox) */
+.content-wrapper {
+    display: flex;
+    gap: 30px; /* Сурет пен мәтін арасындағы қашықтық */
+    align-items: flex-start;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+/* Сол жақтағы суреттің блогы */
+.page-image {
+    flex: 0 0 350px; /* Суреттің бекітілген ені (350 пиксель) */
+    max-width: 100%;
+}
+
+.page-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Оң жақтағы мәтін кусогы */
+.text-block {
+    flex: 1; /* Қалған барлық бос орынды мәтін алады */
+    line-height: 1.7;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.text-block p {
+    margin-bottom: 15px;
+}
+
+.text-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* Телефондарға арналған адаптивтілік (Экран кішірейгенде сурет жоғары шығады) */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .page-image {
+        flex: none;
+        width: 100%;
+    }
+}
+
+/* Класс скрытия страниц */
+.id-hidden {
+    display: none;
+}
