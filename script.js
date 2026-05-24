@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
         menu1: document.getElementById("page1"),
         menu2: document.getElementById("page2"),
         menu3: document.getElementById("page3"),
-        menu4: document.getElementById("page4")
-        menu5: document.getElementById("page5")
-        menu6: document.getElementById("page6")
+        menu4: document.getElementById("page4"),
+        menu5: document.getElementById("page5"),
+        menu6: document.getElementById("page6"),
     };
 
     // Связываем кнопки меню
@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
         menu1: document.getElementById("menu1-link"),
         menu2: document.getElementById("menu2-link"),
         menu3: document.getElementById("menu3-link"),
-        menu4: document.getElementById("menu4-link")
-        menu5: document.getElementById("menu5-link")
-        menu6: document.getElementById("menu6-link")
+        menu4: document.getElementById("menu4-link"),
+        menu5: document.getElementById("menu5-link"),
+        menu6: document.getElementById("menu6-link"),
     };
 
     // Функция переключения страниц
