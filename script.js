@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         menu4: document.getElementById("page4"),
         menu5: document.getElementById("page5"),
         menu6: document.getElementById("page6"),
+        menu7: document.getElementById("page7"),
     };
 
     // Связываем кнопки меню
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         menu4: document.getElementById("menu4-link"),
         menu5: document.getElementById("menu5-link"),
         menu6: document.getElementById("menu6-link"),
+        menu7: document.getElementById("menu7-link"),
     };
 
     // Функция переключения страниц
