@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
         menu2: document.getElementById("page2"),
         menu3: document.getElementById("page3"),
         menu4: document.getElementById("page4")
+        menu5: document.getElementById("page5")
+        menu6: document.getElementById("page6")
     };
 
     // Связываем кнопки меню
@@ -13,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
         menu2: document.getElementById("menu2-link"),
         menu3: document.getElementById("menu3-link"),
         menu4: document.getElementById("menu4-link")
+        menu5: document.getElementById("menu5-link")
+        menu6: document.getElementById("menu6-link")
     };
 
     // Функция переключения страниц
@@ -32,4 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     links.menu2.addEventListener("click", (e) => { e.preventDefault(); showPage("menu2"); });
     links.menu3.addEventListener("click", (e) => { e.preventDefault(); showPage("menu3"); });
     links.menu4.addEventListener("click", (e) => { e.preventDefault(); showPage("menu4"); });
+    links.menu5.addEventListener("click", (e) => { e.preventDefault(); showPage("menu5"); });
+    links.menu6.addEventListener("click", (e) => { e.preventDefault(); showPage("menu6"); });
 });
