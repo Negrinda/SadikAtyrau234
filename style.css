@@ -10,15 +10,6 @@ body {
     background-color: #fcfcfc;
     color: #333;
 }
-.gallery img{
-    width: 200px;
-    height: auto;
-}
-.gallery{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
 
 /* Шапка (Хедер) */
 .header {
@@ -120,6 +111,15 @@ body {
 .page-image {
     flex: 0 0 350px; /* Суреттің бекітілген ені (350 пиксель) */
     max-width: 100%;
+}
+.gallery img{
+    width: 200px;
+    height: auto;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .page-image img {
